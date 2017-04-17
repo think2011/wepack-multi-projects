@@ -110,22 +110,19 @@
 
 .ub-img
 {
-	-webkit-background-size:contain;
 	background-size:contain;
 	background-repeat:no-repeat;
 	background-position:center;
 }
 
 .ub-img1
-{	
-	-webkit-background-size:cover;
+{
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-position:center;
 }
 .ub-img2
 {
-	-webkit-background-size:contain;
 	background-size:contain;
 	background-repeat:repeat-x;
 	background-size:auto 100%
@@ -138,14 +135,12 @@
 
 .ub-img4
 {
-	-webkit-background-size:100% auto;
 	background-size:100% auto;
 	background-repeat:no-repeat;
 	background-position:center;
 }
 .ub-img5
 {
-	-webkit-background-size:auto 100%;
 	background-size:auto 100%;
 	background-repeat:no-repeat;
 	background-position:center;

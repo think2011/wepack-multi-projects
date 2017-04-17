@@ -35,7 +35,7 @@ module.exports = {
         return Object.keys(entries).map((name) => {
             let file = entries[name]
             let conf = {
-                filename      : `${name}/index.${ext}`,
+                filename      : `${options.appsRoot}/${name}/index.${ext}`,
                 template      : `${path.dirname(file)}/index.html`,
                 chunks        : [name],
                 chunksSortMode: 'dependency'

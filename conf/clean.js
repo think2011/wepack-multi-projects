@@ -1,6 +1,6 @@
-const rimraf     = require('rimraf')
-const options    = require('./index')
-const envOptions = options.env
+const rimraf  = require('rimraf')
+const options = require('./index')
 
 // 删除之前的代码
-rimraf.sync(`${envOptions.assetsRoot}/*`)
+rimraf.sync(`${options.appsRoot}/*`)
+rimraf.sync(`${options.staticRoot}/*`)
