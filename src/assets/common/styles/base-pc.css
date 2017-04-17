@@ -1,0 +1,36 @@
+@charset "utf-8";
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: none;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    color: #333;
+    background: #fff;
+    /* font-family: "微软雅黑",Arial,"宋体", "Helvetica Neue Light",HelveticaNeue-Light,"Helvetica Neue",Calibri,Helvetica,Arial,'Microsoft YaHei'; */
+    font-family: "Helvetica Neue Light", HelveticaNeue-Light, "Helvetica Neue", Calibri, Helvetica, Arial, 'Microsoft YaHei';
+    line-height: 1;
+    overflow: auto;
+    min-height: 100%;
+}
+
+@media all and (min-width: 640px) {
+    html {
+        background: #fff;
+    }
+
+    body, body.m-body {
+        background: #FFF;
+        max-width: 100%;
+    }
+
+    .modal-container {
+        width: auto;
+        min-width: 200px;
+    }
+}
