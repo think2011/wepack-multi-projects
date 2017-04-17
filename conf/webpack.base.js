@@ -10,8 +10,7 @@ const envOptions           = options.env
 
 const srcDir     = `${options.root}/src`
 const extractCSS = new ExtractTextPlugin({
-    filename: utils.assetsPath('css/[name].[contenthash].css'),
-    disable : process.env.NODE_ENV !== "production"
+    filename: utils.assetsPath(process.env.NODE_ENV !== "production" ? 'css/[name].css' : 'css/[name].[contenthash].css'),
 })
 
 module.exports = {

@@ -9,12 +9,13 @@ const compression       = require('compression')
 const envOptions        = options.env
 
 let browserConf = {
-    open      : envOptions.autoOpen,
-    host      : '0.0.0.0',
-    notify    : false,
-    middleware: [
-        compression()
-    ]
+    open          : envOptions.autoOpen,
+    host          : '0.0.0.0',
+    notify        : false,
+    logFileChanges: false,
+    watchOptions  : {ignoreInitial: true},
+    files         : [options.appsRoot, options.staticRoot],
+    middleware    : [compression()]
 }
 
 if (process.env.MODE === 'jsp') {
@@ -34,6 +35,6 @@ module.exports = merge(baseConf, {
     },
 
     plugins: [
-        new BrowserSyncPlugin(browserConf)
+        new BrowserSyncPlugin(browserConf, {reload: false})
     ]
 })
