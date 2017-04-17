@@ -1,3 +1,5 @@
-module.exports = {
-    a: 1234
-}
+const utils = require('./utils')
+
+require('./index.scss') //引入样式
+
+utils.say()

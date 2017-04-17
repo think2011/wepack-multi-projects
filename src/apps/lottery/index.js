@@ -1,5 +1,5 @@
-require('assets/common/packages/gameBase')
+const utils = require('./utils')
 
-module.exports = {
-    a: 1111
-}
+require('./index.scss') //引入样式
+
+utils.say()
